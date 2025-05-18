@@ -1,39 +1,35 @@
 'use client'
 
+import { useRouter } from "next/navigation"
+
 import {
     Card,
     CardContent,
-    CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 
-import { FileText, MoreVertical } from "lucide-react"
+import { FileText, Link, MoreVertical } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 //Dropdown Menu
-
-
-import { Button } from "@/components/ui/button"
 import {
     DropdownMenu,
     DropdownMenuCheckboxItem,
     DropdownMenuContent,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-
 export default function DocumentCard({ document }) {
-
+    const router = useRouter()
     return (
-        <Card className="bg-stone-50">
+        <Card className="bg-stone-50" onClick={() => router.push(`/document/${document.id}`)}>
             <CardHeader className="flex flex-row items-center justify-between">
                 <FileText size={19} color="#3e9392" className="mr-3" />
                 <CardTitle className="flex-1 px-2 text-sm truncate"> {document.name}</CardTitle>
                 <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
+                    <DropdownMenuTrigger onClick={(e) => e.stopPropagation()} asChild>
                         <Button variant="ghost" className="p-0 w-3 h-3">
                             <MoreVertical size={16} />
                         </Button>
