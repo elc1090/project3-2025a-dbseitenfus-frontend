@@ -37,3 +37,15 @@ export async function deleteUser(userId) {
     });
     return res.json();
 }
+
+// Document
+
+export async function getDocuments() {
+    const res = await fetch(`${URL_BASE}/document/`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+
+    return res.json();
+}
