@@ -43,8 +43,7 @@ export async function deleteUser(userId) {
 export async function getDocuments() {
     const res = await fetch(`${URL_BASE}/document/`, {
         method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        headers: { 'Content-Type': 'application/json' }
     });
 
     return res.json();
