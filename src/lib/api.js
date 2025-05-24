@@ -48,3 +48,12 @@ export async function getDocuments() {
 
     return res.json();
 }
+
+export async function createDocument(document) {
+    const res = await fetch(`${URL_BASE}/document/`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(document),
+    });
+    return res.json()
+}
