@@ -1,7 +1,7 @@
 
 ![Substitua a imagem ao lado por um screenshot do seu projeto](https://mdswanson.com/static/chops-ux-step-4.png "Screenshot do projeto")
 
-[Acesso: ](https://project3-2025a-dbseitenfus-frontend.vercel.app/)
+Acesso: [https://project3-2025a-dbseitenfus-frontend.vercel.app/](https://project3-2025a-dbseitenfus-frontend.vercel.app/)
 
 ### Desenvolvedores
 
