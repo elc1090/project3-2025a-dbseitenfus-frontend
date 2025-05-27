@@ -1,5 +1,5 @@
 
-const URL_BASE = "http://localhost:8000/api";
+const URL_BASE = "https://project3-2025a-dbseitenfus-backend.onrender.com/api";
 
 function getApiToken() {
     return `Token ${localStorage.getItem("token")}`;
