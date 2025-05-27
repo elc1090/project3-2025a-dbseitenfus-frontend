@@ -46,7 +46,7 @@ export function LoginForm({ className, ...props }) {
               </div>
               <span className="sr-only">Acme Inc.</span>
             </a>
-            <h1 className="text-xl font-bold">Seja bem-vindo</h1>
+            <h1 className="text-xl font-bold">CoWrite</h1>
             <div className="text-center text-sm">
               Não possui uma conta?{" "}
               <a href="/signup" className="underline underline-offset-4">
@@ -79,22 +79,8 @@ export function LoginForm({ className, ...props }) {
               Entrar
             </Button>
           </div>
-          <div
-            className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
-            <span className="bg-background text-muted-foreground relative z-10 px-2">
-              Ou
-            </span>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Button variant="outline" type="button" className="w-full">
-              {/* Ícone Apple */}
-              Continuar com Apple
-            </Button>
-            <Button variant="outline" type="button" className="w-full">
-              {/* Ícone Google */}
-              Continuar com Google
-            </Button>
-          </div>
+          
+    
         </div>
       </form>
       <div
