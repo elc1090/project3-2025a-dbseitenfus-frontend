@@ -25,11 +25,6 @@ import { Button } from "./ui/button"
 import Link from "next/link"
 
 const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
   navMain: [
     {
       title: "Meus documentos",
@@ -55,6 +50,8 @@ const data = {
 }
 
 export function AppSidebar({
+  onNewDocumentButtonClicked,
+  user,
   ...props
 }) {
   return (
@@ -62,8 +59,8 @@ export function AppSidebar({
       className="top-(--header-height) h-[calc(100svh-var(--header-height))]!"
       {...props}>
       <SidebarHeader>
-        <Button className="m-5 h-15 w-40" asChild>
-          <Link href="/document"><Plus />Novo</Link>
+        <Button className="m-5 h-15 w-40" onClick={onNewDocumentButtonClicked}>
+          <Plus />Novo
         </Button>
       </SidebarHeader>
       <SidebarContent>
@@ -72,7 +69,7 @@ export function AppSidebar({
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser user={user} />
       </SidebarFooter>
     </Sidebar>
   );
