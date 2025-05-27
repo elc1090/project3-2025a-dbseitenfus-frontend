@@ -1,5 +1,6 @@
 
-![Substitua a imagem ao lado por um screenshot do seu projeto](https://mdswanson.com/static/chops-ux-step-4.png "Screenshot do projeto")
+![Screenshot 2025-05-27 at 05 31 07](https://github.com/user-attachments/assets/ecc57977-e15d-4d14-9e18-403e74683140)
+![Screenshot 2025-05-27 at 05 30 51](https://github.com/user-attachments/assets/00873d4c-90e1-4d83-8c9e-4f00de6ef711)
 
 Acesso: [https://project3-2025a-dbseitenfus-frontend.vercel.app/](https://project3-2025a-dbseitenfus-frontend.vercel.app/)
 
@@ -21,6 +22,7 @@ Para colaboração em tempo real, optou-se por utilizar y-webrtc, evitando a nec
 #### Tecnologias
 
 - Next.js (React)
+- Shadcn (UI)
 - TipTap
 -	Yjs + y-webrtc 
 -	Tailwind CSS
@@ -30,18 +32,13 @@ Para colaboração em tempo real, optou-se por utilizar y-webrtc, evitando a nec
 
 #### Ambiente de desenvolvimento
 
-Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento utilizadas (por exemplo, VS Code + alguma extensão, etc.)
-- ...
-- ...
+- VSCode
+- Postman
+- Google Chrome
 
 #### Referências e créditos
 
-Substitua este trecho por uma lista bem detalhada de todo material consultado para ajudar no projeto, por exemplo:  URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-- ...
-- ...
-
-
-
+- ChatGPT (para algumas orientações e correções de bugs)
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2025a) em 2025a
