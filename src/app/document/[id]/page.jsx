@@ -78,7 +78,7 @@ export default function DocumentPage() {
       const ydoc = new Y.Doc()
 
       const provider = new WebsocketProvider(
-        'wss://demos.yjs.dev/ws', `room-${documentId}`, ydoc
+        'wss://demos.yjs.dev/ws', `room-document-${documentId}`, ydoc
       )
       // const provider = new WebrtcProvider(`room-${documentId}`, ydoc, {
       //   signaling: [
